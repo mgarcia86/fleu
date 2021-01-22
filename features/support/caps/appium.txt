@@ -1,0 +1,8 @@
+[caps]
+automationName = "uiautomator2"
+platformName = "Android"
+deviceName = "virtual devices"
+unicodeKeyboard = "true"
+resetKeyboard = "true"
+#autoGrantPermissions = "true"
+app = "C:\\Downloads\\Fleury.apk"
