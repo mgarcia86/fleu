@@ -1,0 +1,80 @@
+[
+  {
+    "uri": "features/specs/busca_unidades.feature",
+    "id": "busca-por-unidades",
+    "keyword": "Funcionalidade",
+    "name": "Busca por Unidades",
+    "description": "    Realizar busca do endereço das unidades Fleury",
+    "line": 3,
+    "elements": [
+      {
+        "id": "busca-por-unidades;validar-o-endereço-de-uma-unidade",
+        "keyword": "Cenario",
+        "name": "Validar o endereço de uma unidade",
+        "description": "",
+        "line": 7,
+        "type": "scenario",
+        "before": [
+          {
+            "match": {
+              "location": "features/support/hooks.rb:5"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 16039338400
+            }
+          }
+        ],
+        "steps": [
+          {
+            "keyword": "Dado ",
+            "name": "que o usuário esteja na tela de seleção das Unidades",
+            "line": 8,
+            "match": {
+              "location": "features/step_definitions/busca_unidade.rb:3"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 6257897300
+            }
+          },
+          {
+            "keyword": "Quando ",
+            "name": "o usuário selecionar a unidade \"Brasília\"",
+            "line": 9,
+            "match": {
+              "location": "features/step_definitions/busca_unidade.rb:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 8499018000
+            }
+          },
+          {
+            "keyword": "Entao ",
+            "name": "deverá visualizar o endereço \"SEPS 715/915, Conjunto A, Bloco E, Asa Sul, Brasília - DF - 70390-155\"",
+            "line": 10,
+            "match": {
+              "location": "features/step_definitions/busca_unidade.rb:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2016913600
+            }
+          }
+        ],
+        "after": [
+          {
+            "match": {
+              "location": "features/support/hooks.rb:12"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1454551800
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

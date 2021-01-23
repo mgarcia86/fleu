@@ -95,6 +95,7 @@ DEPENDENCIES
   require_all
   rspec
   selenium-webdriver
+  thor (~> 0.19)
   yaml
 
 BUNDLED WITH

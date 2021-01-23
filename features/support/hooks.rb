@@ -5,6 +5,8 @@ require 'report_builder'
 Before do
   $driver.start_driver
   $driver.manage.timeouts.implicit_wait = 15
+
+  @screens = Screens.new
 end
 
 After do |scenario|
@@ -26,12 +28,10 @@ at_exit do
   ReportBuilder.report_path = 'log/report' # gera relatório
   ReportBuilder.color = 'green'
   ReportBuilder.configure do |config|
-    config.report_types = %i[json html]
-    config.report_title = 'Automação App'
+    config.report_types = [:json, :html]
+    config.report_title = 'Fleury Teste'
     options = {
       additional_info: {
-        'Ambiente' => 'Staging / QA',
-        # 'Ambiente' => 'Release / Pré-prod',
         'Data/Hora da execução' => DateTime.now.strftime('%d/%m/%Y - %H:%M:%S')
       }
     }

@@ -5,6 +5,6 @@ Funcionalidade: Busca por Unidades
 
 
 Cenario: Validar o endereço de uma unidade
-    Dado Que o usuário esteja na tela "Unidades"
-    Quando o usuário acessar a unidade "Brasilia"
+    Dado que o usuário esteja na tela de seleção das Unidades
+    Quando o usuário selecionar a unidade "Brasília"
     Entao deverá visualizar o endereço "SEPS 715/915, Conjunto A, Bloco E, Asa Sul, Brasília - DF - 70390-155"

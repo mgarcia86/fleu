@@ -1,13 +1,17 @@
 # frozen_string_literal: true
 
-Dado('Que o usuário esteja na tela {string}') do |_string|
-  pending # Write code here that turns the phrase above into concrete actions
+Dado('que o usuário esteja na tela de seleção das Unidades') do
+  @screens.home.acessar_unidades
+  @screens.unidades.permissao_local
+  @screens.unidades.confirmar_unidade_screen
+  expect($unidades_destaque).to be true
 end
 
-Quando('o usuário acessar a unidade {string}') do |_string|
-  pending # Write code here that turns the phrase above into concrete actions
+Quando('o usuário selecionar a unidade {string}') do |unidade|
+  @screens.unidades.selecionar_unidade(unidade)
 end
 
-Entao('deverá visualizar o endereço {string}') do |_string|
-  pending # Write code here that turns the phrase above into concrete actions
+Entao('deverá visualizar o endereço {string}') do |_endereco|
+  @screens.unidade_brasilia.confirmar_endereco
+  # expect($confirma_endereco.text).to eql endereco
 end
